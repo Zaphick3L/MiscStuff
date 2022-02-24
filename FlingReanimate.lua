@@ -141,7 +141,9 @@ Humanoid.Died:Connect(function()
 		workspace.Camera.CameraSubject = Humanoid
 	end
 end)
---loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaphick3L/MiscStuff/main/Anims.lua"))() -- Animations
+if _G.EnableAnimations == true then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaphick3L/MiscStuff/main/Anims.lua"))() -- Animations
+end
 
 if workspace:FindFirstChildOfClass("Camera") then
 	workspace.Camera.CameraSubject = CloneHumanoid
